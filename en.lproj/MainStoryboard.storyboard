@@ -13,9 +13,6 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfT-Ty-9rj">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="Jen-zR-IAQ"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -28,16 +25,23 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeGreeting:" destination="2" eventType="touchUpInside" id="hf8-ql-4EM"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.95402176788274873" blue="0.30888897903136969" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bfT-Ty-9rj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ArT-DO-Fum"/>
+                            <constraint firstItem="c0q-CS-UCA" firstAttribute="centerX" secondItem="bfT-Ty-9rj" secondAttribute="centerX" type="default" id="D4M-Tm-gKr"/>
                             <constraint firstAttribute="bottom" secondItem="c0q-CS-UCA" secondAttribute="bottom" constant="182" id="R8c-hd-bMT"/>
-                            <constraint firstItem="c0q-CS-UCA" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="rNP-W3-1Rq"/>
-                            <constraint firstItem="bfT-Ty-9rj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="85" id="s9D-bb-dIy"/>
-                            <constraint firstItem="c0q-CS-UCA" firstAttribute="centerX" secondItem="bfT-Ty-9rj" secondAttribute="centerX" type="default" id="w1q-hG-bae"/>
+                            <constraint firstItem="bfT-Ty-9rj" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="beO-fr-on4"/>
+                            <constraint firstItem="bfT-Ty-9rj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="31" id="uCK-zI-2wi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="bfT-Ty-9rj" id="Zqy-Dl-15q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
